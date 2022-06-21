@@ -38,6 +38,7 @@ body {
 
 p {
   line-height: 1.4;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,5 +93,36 @@ h3 {
 
 .list .list__links:hover {
   border-bottom: 3px solid #0e8684;
+}
+
+.collection {
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+.collection__img {
+  width: 250px;
+  margin-bottom: 2rem;
+}
+
+.collection__name {
+  color: #2c353e;
+}
+
+@media screen and (min-width: 800px) {
+  .collection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+  .collection__text {
+    max-width: 50ch;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+
+
+.collection{
+    padding: 1rem 3rem;
+    text-align: center;
+    &__img{
+        width: 250px;
+        margin-bottom: 2rem;
+    }
+
+    &__name{
+        color: $headingColor;
+    }
+
+  
+    @include tablette{
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        column-gap: 3rem;
+        &__text{
+            max-width: 50ch;
+        }
+    }
+}
+ 
