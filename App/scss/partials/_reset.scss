@@ -1,0 +1,28 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+   max-width: 125rem;
+    background-color: #ccc;
+    padding: 1rem;
+    margin: 2rem;
+    @include desktop{
+        margin: 1rem auto;
+    }
+}
