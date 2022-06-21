@@ -76,4 +76,21 @@ h3 {
 .btn--disabled {
   background-color: #e4e2e2;
 }
+
+.list li {
+  margin-bottom: 1.2rem;
+}
+
+.list .list__links {
+  color: #e4e2e0;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  -webkit-transition: border 0.2s ease-out;
+  transition: border 0.2s ease-out;
+}
+
+.list .list__links:hover {
+  border-bottom: 3px solid #0e8684;
+}
 /*# sourceMappingURL=main.css.map */

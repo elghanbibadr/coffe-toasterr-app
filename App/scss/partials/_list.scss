@@ -1,0 +1,17 @@
+.list{
+    li{
+        margin-bottom: 1.2rem;
+    }
+    .list__links{
+        color:$lightGray;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 2px;
+        transition: border 0.2s ease-out;
+        &:hover{
+            border-bottom: 3px solid $green;
+        }
+    }
+}
+
+
