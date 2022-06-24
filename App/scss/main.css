@@ -95,22 +95,22 @@ h3 {
   border-bottom: 3px solid #0e8684;
 }
 
-.collection {
+.card {
   padding: 1rem 3rem;
   text-align: center;
 }
 
-.collection__img {
+.card__img {
   width: 250px;
   margin-bottom: 2rem;
 }
 
-.collection__name {
+.card__name {
   color: #2c353e;
 }
 
 @media screen and (min-width: 800px) {
-  .collection {
+  .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -121,7 +121,7 @@ h3 {
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
   }
-  .collection__text {
+  .card__text {
     max-width: 50ch;
   }
 }

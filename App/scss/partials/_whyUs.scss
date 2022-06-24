@@ -1,0 +1,46 @@
+
+.whyUs__callout{
+    background-color: $green;
+    margin: 1rem;
+    max-width: 60rem !important;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+   
+    margin-inline: auto;
+    padding-block: 6rem;
+    // @include tablette{
+    //   padding-block: 4rem;
+    //   display: grid;
+    //   grid-template-columns: 1fr 3fr;
+    // }
+    
+  img{
+    width: 70px;
+    margin-bottom: 3rem;
+  }
+  .card__img--box{
+    @include tablette{
+      justify-self:center;
+    }
+  }
+
+  h2,p{
+    color: white;
+  }
+  @include tablette{
+    column-gap: 4rem;
+    max-width: 80rem;
+    padding-block: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+  }
+  @include desktop{
+    grid-template-columns: 1fr;
+    text-align: center ;
+  }
+  p{
+    @include desktop{
+      max-width: 100ch;
+    }
+  }
+}

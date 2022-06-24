@@ -1,0 +1,18 @@
+@include desktop{
+    .grid{
+        display: grid;
+    }
+
+    .grid--cls-2{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .grid--cls-3{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .grid--cls-4{
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 2rem;
+    }
+}
