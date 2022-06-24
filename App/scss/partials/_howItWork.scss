@@ -1,0 +1,17 @@
+.howWorks__medthode{
+    text-align: center;
+    padding: 1rem;
+    &-index{
+      color: $lightOrange;
+      font-size: 7rem;
+      font-weight: bolder;
+      font-family: 'Fraunces', serif ;
+    }
+    &-title{
+      color: $headingColor;
+      margin-block: 3rem;
+    }
+    @include tablette{
+      text-align: left;
+    }
+  }
