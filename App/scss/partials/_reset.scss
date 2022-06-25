@@ -20,9 +20,8 @@ a{
 
 .container{
    max-width: 125rem;
-    background-color: #ccc;
     padding: 1rem;
-    margin: 2rem;
+    margin: 1rem;
     @include desktop{
         margin: 1rem auto;
     }
