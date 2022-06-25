@@ -21,8 +21,8 @@ a{
 .container{
    max-width: 125rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 2rem 1rem;
     @include desktop{
-        margin: 1rem auto;
+        margin: 2rem auto;
     }
 }

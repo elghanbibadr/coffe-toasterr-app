@@ -8,11 +8,16 @@
     font-family: 'Barlow', sans-serif;
     letter-spacing: -0.1px;
     color: white;
+    cursor: pointer;
+    transition: 0.4s ;
 }
 
 
 .btn--green{
     background-color: $green;
+    &:hover{
+        background-color: #225c5b;
+    }
 }
 
 .btn--disabled{

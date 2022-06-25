@@ -1,0 +1,54 @@
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    padding-inline: 0.5rem;
+    &__logo{
+        height: 2.5rem;
+    }
+   
+    &__close,&__hamburger{
+        margin-top:6px;
+        height: 1.7rem;
+        cursor: pointer;
+        @include tablette{
+            display: none;
+        }
+    }
+    &__list{
+        width: 100%;
+        display: none;
+       
+        @include tablette{
+            display: block;
+            width:auto;
+            display: inherit;
+            transform: translateY(8px);
+            .list__links{
+                margin-inline: 10px;
+                color: rgb(186, 186, 186) !important;
+               font-size: 1.3rem;
+            }
+        }
+        .list__links{
+            color: $headingColor;
+        }
+    }
+  
+    &__list.show{
+       display: block;
+       text-align: center;
+       margin-top: 4rem;
+       li{
+        margin-block: 3rem;
+        font-size: 2.2rem;
+       }
+    }
+    .hidden{
+        display: none;
+    }
+}

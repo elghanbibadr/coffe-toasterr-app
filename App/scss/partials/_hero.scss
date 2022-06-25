@@ -1,0 +1,42 @@
+
+.hero{
+    height: 80vh;
+    margin: 3rem;
+    border-radius: $borderRadius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  @include textAlign;
+    background-image: url(/App/assets/home/mobile/image-hero-coffeepress.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    @include tablette{
+      padding-left: 4rem;
+      background-image: url(/App/assets/home/tablet/image-hero-coffeepress.jpg);
+    }
+    @include desktop{
+      background-position:top left;
+      background-image: url(/App/assets/home/desktop/image-hero-coffeepress.jpg);
+    }
+    
+    &__title,&__desc{
+      color: white;
+    }
+  
+    &__desc{
+      margin-block: 1rem 2rem;
+      @include tablette{
+          max-width: 45ch;
+          margin-bottom: 4rem;
+      }
+    }
+  
+    &__btn{
+      align-self: center;
+      @include tablette{
+          align-self: flex-start;
+      }
+    }
+  }
