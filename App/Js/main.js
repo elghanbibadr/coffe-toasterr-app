@@ -1,27 +1,10 @@
-let navHamburger=document.querySelector('.nav__hamburger');
-let navClose=document.querySelector('.nav__close');
-let navList=document.querySelector('.nav__list');
+import './nav.js';
 
 
 
-class Nav{
-    constructor(){
-        navHamburger.addEventListener('click',this._ShowList);
-        navClose.addEventListener('click',this._hideList);
-    }
-     _ShowList(){
-        navList.classList.add('show');
-        navClose.classList.remove('hidden');
-        this.classList.add('hidden');
-       }
-       
-       
-        _hideList(){
-        navList.classList.remove('show');
-        navHamburger.classList.remove('hidden')
-        this.classList.add('hidden');
-       }
-       
+// this is general fucntion for adding specifique classes to the targeted element and can be shared between all the modules
+export function UpdateClassesOnElement(element,className,isAdd){
+    if (isAdd) element.classList.add(`${className}`);
+    else element.classList.remove(`${className}`);
+
 }
-
-let myNavigation=new Nav();
