@@ -99,6 +99,12 @@ h3 {
   text-align: center;
 }
 
+@media screen and (min-width: 750px) {
+  .card {
+    text-align: left;
+  }
+}
+
 .card__img {
   width: 250px;
   margin-bottom: 2rem;
@@ -113,7 +119,6 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: left;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

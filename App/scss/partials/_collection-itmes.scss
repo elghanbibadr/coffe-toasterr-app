@@ -2,7 +2,7 @@
 
 .card{
     padding: 1rem 3rem;
-    text-align: center;
+    @include textAlign;
     &__img{
         width: 250px;
         margin-bottom: 2rem;
@@ -15,7 +15,6 @@
   
     @include tablette{
         display: flex;
-        text-align: left;
         justify-content: center;
         column-gap: 3rem;
         &__text{

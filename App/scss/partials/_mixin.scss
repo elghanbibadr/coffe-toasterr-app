@@ -14,3 +14,10 @@
         @content;
     }
 }
+
+@mixin textAlign {
+    text-align: center;
+    @include tablette{
+    text-align: left;
+    }
+}
