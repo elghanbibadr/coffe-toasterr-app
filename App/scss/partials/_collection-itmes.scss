@@ -3,10 +3,7 @@
 .card{
     padding: 1rem 3rem;
     @include textAlign;
-    &__img{
-        width: 250px;
-        margin-bottom: 2rem;
-    }
+  
 
     &__name{
         color: $headingColor;
@@ -16,10 +13,14 @@
     @include tablette{
         display: flex;
         justify-content: center;
-        column-gap: 3rem;
+        column-gap: 1rem;
         &__text{
             max-width: 50ch;
         }
+
+    }
+    @include desktop{
+        flex-direction: column;
     }
 }
  

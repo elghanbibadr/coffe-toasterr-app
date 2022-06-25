@@ -1,0 +1,44 @@
+.collection{
+    &__title{
+        text-align: center;
+        color: #ccc;
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        @include tablette{
+            font-size: 7rem;
+        }
+        @include desktop{
+            font-size: 17rem;
+        }
+    }
+     margin-top: 6rem;
+     padding-inline: 2rem;
+
+     &__item{
+      margin-bottom: 7rem;
+     }
+
+    &__img{
+        width: 200px !important;
+        margin-bottom: 2rem;
+        @include desktop{
+            transform: translateY(-90px);
+        }
+    }
+   
+    &__desc{
+        @include tablette{
+        width: 35ch;
+        }
+        @include desktop{
+             width: 25ch;
+            text-align: center;
+        }
+    }
+
+    &__name{
+        font-size: 2.5rem;
+        
+    }
+}
+

@@ -12,7 +12,8 @@
         column-gap: 2rem;
     }
     .grid--cls-4{
-        grid-template-columns: repeat(4,1fr);
-        column-gap: 2rem;
+        grid-template-columns: repeat(4,250px);
+        column-gap: 3rem;
+        justify-content: center;
     }
 }
