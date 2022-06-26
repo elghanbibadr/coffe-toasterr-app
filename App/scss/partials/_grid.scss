@@ -17,3 +17,13 @@
         justify-content: center;
     }
 }
+
+@include tablette{
+    .grid-md{
+        display: grid;
+    }
+    .grid-md-cl3{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
