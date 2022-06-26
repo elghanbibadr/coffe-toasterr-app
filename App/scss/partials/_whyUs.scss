@@ -1,8 +1,54 @@
+.whyUs{
+  background-color: $headingColor;
+  border-radius: $borderRadius;
+  padding: 5rem 3rem;
+  margin: 2rem;
+  height: 130vh !important;
+  position: relative;
+  @include tablette{
+      height: 80vh !important;
+      width: 80%;
+      margin-inline: auto;
+  }
+
+  &__title,&__text{
+      color: white;
+      text-align: center;
+  }
+
+  &__title{
+      font-size: 3.5rem;
+  }
+
+  &__text{
+      margin-bottom: 4rem;
+      @include desktop{
+        padding-inline: 20rem;
+      }
+  }
+
+  &__callout-container{
+      padding-inline: 3rem;
+  position: absolute;
+   top: 25rem;
+   left: 0;
+   right: 0;
+   margin-inline: auto;
+   h3{
+      color: white;
+   }
+   @include desktop{
+      top: 26rem;
+   }
+  }
+}
+
+
 
 .whyUs__callout{
     background-color: $green;
     margin: 1rem;
-    max-width: 60rem !important;
+    max-width: 50rem !important;
     padding: 3rem 2rem;
     border-radius: 10px;
    
@@ -12,7 +58,6 @@
     
   img{
     width: 70px;
-    margin-bottom: 3rem;
   }
   .card__img--box{
     @include tablette{
@@ -25,15 +70,16 @@
   }
   @include tablette{
     column-gap: 4rem;
-    max-width: 80rem;
+    max-width: 70rem !important;
     padding-block: 4rem;
       display: grid;
       grid-template-columns: 1fr 3fr;
   }
-  @include desktop{
-    grid-template-columns: 1fr;
-    text-align: center ;
-  }
+   @include desktop{
+     grid-template-columns: 1fr;
+     text-align: center ;
+     height: 350px;
+   }
   p{
     @include desktop{
       max-width: 100ch;
