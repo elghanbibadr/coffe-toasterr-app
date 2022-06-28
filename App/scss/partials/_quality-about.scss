@@ -1,0 +1,47 @@
+
+
+.quality{
+    margin: 18rem 3rem;
+    border-radius: $borderRadius;
+    background-image: url(/App/assets/about/mobile/bg-quality.png);
+    &__img{
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30rem;
+        position: relative;
+        top: -14rem !important;
+     background-image: url(/App/assets/about/mobile/image-quality.jpg);
+     @include tablette{
+       
+         background-image: url(/App/assets/about/tablet/image-quality.jpg);
+
+     }
+     @include desktop{
+        height: 45rem;
+        background-image: url(/App/assets/about/desktop/image-quality.jpg);
+        
+     }
+    }
+   &__desc{
+    padding: 1.5rem;
+    @include textAlign;
+    position: relative;
+    top: -8rem ;
+    @include desktop{
+        top: 0 ;
+        grid-area: 1/1/1/2;
+        padding-left: 6rem;
+        margin-top: 5rem;
+    }
+   }
+
+    &__title,&__text{
+        color: white;
+        
+    }
+  
+    @include desktop{
+        margin-top: 16rem !important;
+       width: 86%;
+    }
+}
