@@ -800,4 +800,54 @@ h3 {
     width: 86%;
   }
 }
+
+.headquarters {
+  margin-top: -4rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .headquarters {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headquarters {
+    margin-top: 10rem !important;
+  }
+}
+
+.headquarters__title {
+  color: #2c353e;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 750px) {
+  .headquarters__title {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headquarters__title {
+    margin-left: 7rem;
+  }
+}
+
+.headquarters__location {
+  color: #2c353e;
+  margin-block: 4rem 2rem;
+  font-family: 'Barlow', sans-serif !important;
+}
+
+.headquarters__country {
+  margin-bottom: 8rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.headquarters__coordinate li p {
+  margin-block: 6px;
+}
 /*# sourceMappingURL=main.css.map */

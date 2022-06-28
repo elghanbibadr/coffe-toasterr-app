@@ -1,0 +1,36 @@
+.headquarters{
+    margin-top: -4rem;
+    @include textAlign;
+    @include desktop{
+        margin-top: 10rem !important;
+    }
+    &__title{
+        color: $headingColor;
+        margin-bottom: 6rem;
+        @include tablette{
+            margin-left: 1rem;
+        }
+        @include desktop{
+            margin-left: 7rem;
+        }
+    }
+
+   &__location{
+    color: $headingColor;
+    margin-block: 4rem 2rem;
+    font-family: 'Barlow', sans-serif !important;
+   }
+
+   &__country{
+    margin-bottom: 8rem;
+    justify-self: center;
+
+   }
+
+   &__coordinate{
+    li p{
+        
+        margin-block: 6px;
+    }
+   }
+}
