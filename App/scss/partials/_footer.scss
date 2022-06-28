@@ -1,0 +1,42 @@
+
+.footer{
+    background-color:$headingColor;
+   padding: 4rem 1rem;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__logo{
+       filter:brightness(5) ;
+
+   }
+   &__list{
+       margin-block: 4rem;
+       li{
+           margin-block: 2.6rem !important;
+       }
+       li a{
+           font-size: 1.3rem;
+           color: rgb(186, 186, 186) !important;             
+       }
+       @include tablette{
+           display: inherit;
+           li {
+           margin-inline: 1rem;
+           }
+       }
+   }
+
+ &__media{
+   .fa-brands{
+   height: 1rem !important;
+   // background-color: red;
+  }
+ }
+
+   @include desktop{
+       padding: 4rem;
+     flex-direction: row;
+     justify-content: space-between;
+   }
+}
