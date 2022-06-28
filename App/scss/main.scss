@@ -49,6 +49,7 @@
   }
 
     @include desktop{
+        padding: 4rem;
       flex-direction: row;
       justify-content: space-between;
     }

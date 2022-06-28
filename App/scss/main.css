@@ -200,7 +200,7 @@ h3 {
 }
 
 .howItWork__btn {
-  margin-top: 1.6rem;
+  margin-block: 6rem;
   text-align: center;
 }
 
@@ -648,6 +648,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .footer {
+    padding: 4rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
