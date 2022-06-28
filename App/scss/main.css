@@ -488,7 +488,6 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-image: url(/App/assets/home/mobile/image-hero-coffeepress.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -503,14 +502,12 @@ h3 {
 @media screen and (min-width: 750px) {
   .hero {
     padding-left: 4rem;
-    background-image: url(/App/assets/home/tablet/image-hero-coffeepress.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     background-position: top left;
-    background-image: url(/App/assets/home/desktop/image-hero-coffeepress.jpg);
   }
 }
 
@@ -539,6 +536,22 @@ h3 {
   .hero__btn {
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+}
+
+.hero--home {
+  background-image: url(/App/assets/home/mobile/image-hero-coffeepress.jpg);
+}
+
+@media screen and (min-width: 750px) {
+  .hero--home {
+    background-image: url(/App/assets/home/tablet/image-hero-coffeepress.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero--home {
+    background-image: url(/App/assets/home/desktop/image-hero-coffeepress.jpg);
   }
 }
 
@@ -656,6 +669,22 @@ h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+.hero--about {
+  background-image: url(/App/assets/about/mobile/image-hero-whitecup.jpg);
+}
+
+@media screen and (min-width: 750px) {
+  .hero--about {
+    background-image: url(/App/assets/about/tablet/image-hero-whitecup.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero--about {
+    background-image: url(/App/assets/about/desktop/image-hero-whitecup.jpg);
   }
 }
 /*# sourceMappingURL=main.css.map */

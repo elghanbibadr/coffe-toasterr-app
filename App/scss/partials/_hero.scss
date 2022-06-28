@@ -7,18 +7,15 @@
     flex-direction: column;
     justify-content: center;
   @include textAlign;
-    background-image: url(/App/assets/home/mobile/image-hero-coffeepress.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
   
     @include tablette{
       padding-left: 4rem;
-      background-image: url(/App/assets/home/tablet/image-hero-coffeepress.jpg);
     }
     @include desktop{
       background-position:top left;
-      background-image: url(/App/assets/home/desktop/image-hero-coffeepress.jpg);
     }
     
     &__title,&__desc{
@@ -39,4 +36,15 @@
           align-self: flex-start;
       }
     }
+  }
+
+  .hero--home{
+    background-image: url(/App/assets/home/mobile/image-hero-coffeepress.jpg);
+    @include tablette{
+      background-image: url(/App/assets/home/tablet/image-hero-coffeepress.jpg);
+    }
+    @include desktop{
+      background-image: url(/App/assets/home/desktop/image-hero-coffeepress.jpg);
+    }
+
   }
