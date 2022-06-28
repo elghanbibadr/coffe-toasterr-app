@@ -22,8 +22,15 @@
     .grid-md{
         display: grid;
     }
+
+    .grid-md-cl2{
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 2rem;
+    }
+    
     .grid-md-cl3{
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
     }
+
 }

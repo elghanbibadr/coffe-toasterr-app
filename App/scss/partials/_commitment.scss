@@ -1,0 +1,29 @@
+
+.commitment{
+    padding-inline: 2rem;
+    margin-top: 4em !important;
+    &__img{
+        width: 90%;
+        display: block;
+        margin-inline: auto;
+        border-radius: $borderRadius;
+    @include desktop{
+        width: 45rem
+    }
+    }
+  
+    &__desc{
+         @include textAlign;
+         align-self: center !important;
+    }
+
+    &__title{
+        margin-block: 6rem 3rem;
+        color: $headingColor;
+        text-align: center !important;
+        @include tablette{
+            margin-top: 0;
+        }
+    }
+
+}

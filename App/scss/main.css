@@ -397,6 +397,12 @@ h3 {
     display: -ms-grid;
     display: grid;
   }
+  .grid-md-cl2 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
   .grid-md-cl3 {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -685,6 +691,49 @@ h3 {
 @media screen and (min-width: 1200px) {
   .hero--about {
     background-image: url(/App/assets/about/desktop/image-hero-whitecup.jpg);
+  }
+}
+
+.commitment {
+  padding-inline: 2rem;
+  margin-top: 4em !important;
+}
+
+.commitment__img {
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .commitment__img {
+    width: 45rem;
+  }
+}
+
+.commitment__desc {
+  text-align: center;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+}
+
+@media screen and (min-width: 750px) {
+  .commitment__desc {
+    text-align: left;
+  }
+}
+
+.commitment__title {
+  margin-block: 6rem 3rem;
+  color: #2c353e;
+  text-align: center !important;
+}
+
+@media screen and (min-width: 750px) {
+  .commitment__title {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
