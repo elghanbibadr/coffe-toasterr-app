@@ -1,0 +1,10 @@
+.plan--about{
+    background-image: url(/App/assets/plan/mobile/image-hero-blackcup.jpg);
+    @include tablette{
+      background-image: url(/App/assets/plan/tablet/image-hero-blackcup.jpg);
+    }
+    @include desktop{
+      background-image: url(/App/assets/plan/desktop/image-hero-blackcup.jpg);
+    }
+
+  }
