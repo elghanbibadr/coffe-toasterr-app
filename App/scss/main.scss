@@ -17,36 +17,94 @@
 @import './partials/quality-about';
 @import './partials/headquarters';
 @import './partials/plan--hero';
+@import './partials/howITwork-plan';
 
+.accordion{
+    margin-top: 6rem;
+    &__questions-box{
 
-
-  .howItWork--plan{
-     margin-top:10rem !important;
-    border-radius: $borderRadius;
-    background-color: $headingColor;
-    p{
-        color: white;
     }
-    h2{
-        color: white;
+
+    &__question{
+        margin-block: 4rem;
     }
-    .howItWork__steps-container{
-       .steps{
-        background-color: $headingColor;
-        &:first-child::after{
-            content: '';
-            background-color:red;
-            height: 3px;
-            width: 100%;
-            background-color:$lightOrange;
-            display: inline-block;
-            position: absolute;
-            top: 1.3rem;
-            z-index: -44;
+
+    &__question__header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    
+      h2{
+        color: rgb(150, 149, 149);
+        font-size: 2.5rem;
+        @include desktop{
+            font-size: 3rem;
         }
-       }
+      }
+      img{
+        height: 13px;
+        margin-top: 10px;
+         cursor: pointer;
+      }
+    }
+
+    .accordion__question__answers{
+        background-color: rgb(227, 221, 221);
+        border-radius: $borderRadius;
+        margin-bottom: 3rem;
+        cursor: pointer;
+        padding: 2rem;
+        transition: 0.3s;
+        &:hover{
+            background-color:$lightOrange;
+        }
+        h3{
+            font-size: 2.1rem;
+            margin-bottom: 10px;
+        }
+     &-box{
+      
+      @include tablette{
+
+        display: flex;
+        gap: 3rem;
+      }
+     }
+    }
+    &__link{
+        display: none;
+        @include desktop{
+            display: block;
+            grid-area: 1/1/1/2;
+            transform: translateY(4rem);
+        }
+        &-item{
+          color:rgb(135, 135, 135);
+          font-weight: bold;
+          font-size: 2.5rem;
+          margin-bottom: 2rem;
+          width: 20rem;
+          padding-bottom: 1.5rem;
+          transition: color 0.5s;
+          cursor: pointer;
+           letter-spacing: -1px !important;
+           border-bottom: 3px solid rgb(135, 135, 135);
+           &:hover{
+            color: $headingColor;
+           }
+        }
+    }
+
+    @include tablette{
+        width: 80%;
+        margin-inline: auto;        
     }
     @include desktop{
-        width: 85%;
+        margin-top: 13rem !important;
     }
-  }
+}
+
+
+.hidden{
+//  display: none !important;
+}

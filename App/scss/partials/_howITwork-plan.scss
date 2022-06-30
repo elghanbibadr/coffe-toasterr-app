@@ -1,0 +1,30 @@
+.howItWork--plan{
+    margin-top:10rem !important;
+   border-radius: $borderRadius;
+   background-color: $headingColor;
+   p{
+       color: white;
+   }
+   h2{
+       color: white;
+   }
+   .howItWork__steps-container{
+      .steps{
+       background-color: $headingColor;
+       &:first-child::after{
+           content: '';
+           background-color:red;
+           height: 3px;
+           width: 100%;
+           background-color:$lightOrange;
+           display: inline-block;
+           position: absolute;
+           top: 1.3rem;
+           z-index: -44;
+       }
+      }
+   }
+   @include desktop{
+       width: 85%;
+   }
+ }

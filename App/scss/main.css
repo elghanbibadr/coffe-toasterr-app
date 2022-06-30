@@ -375,6 +375,12 @@ h3 {
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
   }
+  .grid--cls-2--large {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -webkit-column-gap: 5rem !important;
+            column-gap: 5rem !important;
+  }
   .grid--cls-3 {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -900,6 +906,116 @@ h3 {
 @media screen and (min-width: 1200px) {
   .howItWork--plan {
     width: 85%;
+  }
+}
+
+.accordion {
+  margin-top: 6rem;
+}
+
+.accordion__question {
+  margin-block: 4rem;
+}
+
+.accordion__question__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.accordion__question__header h2 {
+  color: #969595;
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .accordion__question__header h2 {
+    font-size: 3rem;
+  }
+}
+
+.accordion__question__header img {
+  height: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.accordion .accordion__question__answers {
+  background-color: #e3dddd;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  padding: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.accordion .accordion__question__answers:hover {
+  background-color: #fbdec7;
+}
+
+.accordion .accordion__question__answers h3 {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .accordion .accordion__question__answers-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+  }
+}
+
+.accordion__link {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .accordion__link {
+    display: block;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1/1/1/2;
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+}
+
+.accordion__link-item {
+  color: #878787;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  width: 20rem;
+  padding-bottom: 1.5rem;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
+  letter-spacing: -1px !important;
+  border-bottom: 3px solid #878787;
+}
+
+.accordion__link-item:hover {
+  color: #2c353e;
+}
+
+@media screen and (min-width: 750px) {
+  .accordion {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .accordion {
+    margin-top: 13rem !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

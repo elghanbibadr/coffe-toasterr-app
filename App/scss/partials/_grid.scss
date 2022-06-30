@@ -7,6 +7,10 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
     }
+    .grid--cls-2--large{
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5rem !important;
+    }
     .grid--cls-3{
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
