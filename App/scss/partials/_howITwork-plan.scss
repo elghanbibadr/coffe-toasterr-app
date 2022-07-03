@@ -1,30 +1,19 @@
-.howItWork--plan{
-    margin-top:10rem !important;
-   border-radius: $borderRadius;
-   background-color: $headingColor;
-   p{
-       color: white;
-   }
-   h2{
-       color: white;
-   }
-   .howItWork__steps-container{
-      .steps{
-       background-color: $headingColor;
-       &:first-child::after{
-           content: '';
-           background-color:red;
-           height: 3px;
-           width: 100%;
-           background-color:$lightOrange;
-           display: inline-block;
-           position: absolute;
-           top: 1.3rem;
-           z-index: -44;
+ .howItWork--plan{
+     margin-top:10rem !important;
+    border-radius: $borderRadius;
+  background-color: $headingColor;
+    p{
+        color: white;
+    }
+    h2{
+        color: white;
+    }
+       .steps{
+        z-index:9999999999999999999999;
+              background-color:$headingColor!important;
        }
-      }
-   }
-   @include desktop{
-       width: 85%;
-   }
- }
+    @include desktop{
+        width: 85%;
+    }
+
+  }

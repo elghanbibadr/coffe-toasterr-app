@@ -228,18 +228,20 @@ h3 {
   display: block;
   border: 1px solid #0e8684;
   background-color: white;
+  z-index: 999999;
   border-radius: 50%;
 }
 
 .howItWork__steps-container .steps:first-child::after {
   content: '';
   height: 3px;
-  width: 100%;
+  width: 92%;
   background-color: #fbdec7;
   display: inline-block;
   position: absolute;
   top: 1.3rem;
-  z-index: -44;
+  left: 3rem;
+  z-index: -1 !important;
 }
 
 @media screen and (min-width: 750px) {
@@ -254,6 +256,10 @@ h3 {
     padding-inline: 4rem !important;
     margin-top: 25rem !important;
   }
+}
+
+.howItWork #one {
+  z-index: 99999999;
 }
 
 .whyUs {
@@ -906,20 +912,9 @@ h3 {
   color: white;
 }
 
-.howItWork--plan .howItWork__steps-container .steps {
-  background-color: #2c353e;
-}
-
-.howItWork--plan .howItWork__steps-container .steps:first-child::after {
-  content: '';
-  background-color: red;
-  height: 3px;
-  width: 100%;
-  background-color: #fbdec7;
-  display: inline-block;
-  position: absolute;
-  top: 1.3rem;
-  z-index: -44;
+.howItWork--plan .steps {
+  z-index: 9999999999999999999999;
+  background-color: #2c353e !important;
 }
 
 @media screen and (min-width: 1200px) {

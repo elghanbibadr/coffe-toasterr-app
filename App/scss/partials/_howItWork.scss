@@ -46,17 +46,21 @@
         display: block;
         border: 1px solid $green;
         background-color: white;
+         z-index: 999999;
         border-radius: 50%;
         &:first-child::after{
            content: '';
            height: 3px;
-           width: 100%;
+           width: 92%;
            background-color:$lightOrange;
            display: inline-block;
            position: absolute;
            top: 1.3rem;
-           z-index: -44;
+           left: 3rem;
+           z-index:-1 !important;
+
         }
+        
       }
      @include tablette{
        opacity: 1;
@@ -70,6 +74,10 @@
       padding-inline: 4rem !important;
       margin-top: 25rem !important;
     }
+  #one{
+    z-index: 99999999;
+    // background-color: red !important;
+  }
 }
 
 
