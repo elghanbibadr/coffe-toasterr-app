@@ -45,6 +45,7 @@
         height: 13px;
         margin-top: 10px;
          cursor: pointer;
+         transition: transform 0.5s;
       }
     }
 
@@ -106,5 +107,14 @@
 
 
 .hidden{
-//  display: none !important;
+display: none !important;
+}
+
+.arrow.rotate{
+    transform: rotate(180deg);
+}
+
+.bg-green{
+    background-color: $green !important;
+    color: white !important;
 }

@@ -942,6 +942,10 @@ h3 {
   height: 13px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .accordion .accordion__question__answers {
@@ -1017,5 +1021,19 @@ h3 {
   .accordion {
     margin-top: 13rem !important;
   }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.arrow.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.bg-green {
+  background-color: #0e8684 !important;
+  color: white !important;
 }
 /*# sourceMappingURL=main.css.map */
