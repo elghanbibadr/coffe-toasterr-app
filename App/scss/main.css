@@ -1036,4 +1036,34 @@ h3 {
   background-color: #0e8684 !important;
   color: white !important;
 }
+
+.orderSummary__contentBox {
+  padding: 2.5rem 1rem;
+  border-radius: 10px;
+  background-color: #2c353e;
+  color: white !important;
+}
+
+.orderSummary__title {
+  margin-bottom: 1rem;
+}
+
+.orderSummary__content {
+  line-height: 2;
+}
+
+.orderSummary__content strong {
+  color: #0e8684 !important;
+}
+
+.createPlanBtn-box {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .createPlanBtn-box {
+    text-align: end;
+  }
+}
 /*# sourceMappingURL=main.css.map */

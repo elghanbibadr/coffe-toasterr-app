@@ -95,3 +95,32 @@ display: none !important;
     background-color: $green !important;
     color: white !important;
 }
+
+// order summary
+
+.orderSummary{
+    &__contentBox{
+        padding: 2.5rem 1rem;
+        border-radius: $borderRadius;
+        background-color: $headingColor;
+        color: white !important;
+    }
+     &__title{
+        margin-bottom: 1rem;
+     }
+
+    &__content{
+        line-height: 2;
+        strong{
+            color: $green !important;
+        }
+    }
+}
+
+.createPlanBtn-box{
+    text-align: center;
+    margin-top: 2.5rem;
+    @include desktop{
+        text-align: end;
+    }
+}
