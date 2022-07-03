@@ -641,8 +641,8 @@ h3 {
 }
 
 .footer__logo {
-  -webkit-filter: brightness(5);
-          filter: brightness(5);
+  -webkit-filter: brightness(6);
+          filter: brightness(6);
 }
 
 .footer__list {
@@ -667,8 +667,26 @@ h3 {
   }
 }
 
-.footer__media .fa-brands {
-  height: 1rem !important;
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    width: 40%;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+}
+
+.footer__media img {
+  margin-inline: 10px;
+  height: 3rem;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footer__media img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 @media screen and (min-width: 1200px) {
